@@ -30,3 +30,15 @@ steps:
   inputs:
     solution: 'Xamarin.Android.ViewPump/Xamarin.Android.ViewPump.csproj'
     configuration: 'Release'
+
+- task: NuGetCommand@2
+  inputs:
+    command: 'pack'
+    packagesToPack: 'nuget.nuspec'
+    versioningScheme: 'off'
+
+- task: PublishBuildArtifacts@1
+  inputs:
+    PathtoPublish: '$(Build.ArtifactStagingDirectory)'
+    ArtifactName: 'drop'
+    publishLocation: 'Container'
