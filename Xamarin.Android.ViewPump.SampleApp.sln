@@ -7,6 +7,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xamarin.Android.ViewPump.Sa
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xamarin.Android.ViewPump", "Xamarin.Android.ViewPump\Xamarin.Android.ViewPump.csproj", "{98E4F45E-F683-4EF5-8880-EBE0FE44FA21}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{4E6893B4-CB71-4006-9EED-E1A7CF70A8B7}"
+	ProjectSection(SolutionItems) = preProject
+		nuget.nuspec = nuget.nuspec
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
