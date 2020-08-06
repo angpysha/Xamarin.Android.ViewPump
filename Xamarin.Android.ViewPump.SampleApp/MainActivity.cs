@@ -3,11 +3,13 @@ using Android.App;
 using Android.Content;
 using Android.OS;
 using Android.Runtime;
-using Android.Support.Design.Widget;
-using Android.Support.V7.App;
 using Android.Views;
 using Android.Widget;
+using AndroidX.AppCompat.App;
+using Google.Android.Material.FloatingActionButton;
+using Google.Android.Material.Snackbar;
 using IO.Github.Inflationx.Viewpump;
+using Toolbar = AndroidX.AppCompat.Widget.Toolbar;
 
 namespace Xamarin.Android.ViewPump.SampleApp
 {
@@ -29,7 +31,7 @@ namespace Xamarin.Android.ViewPump.SampleApp
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
             SetContentView(Resource.Layout.activity_main);
 
-            global::Android.Support.V7.Widget.Toolbar toolbar = FindViewById<global::Android.Support.V7.Widget.Toolbar>(Resource.Id.toolbar);
+            var toolbar = FindViewById<Toolbar>(Resource.Id.toolbar);
             SetSupportActionBar(toolbar);
 
             FloatingActionButton fab = FindViewById<FloatingActionButton>(Resource.Id.fab);
