@@ -29,3 +29,4 @@ steps:
 - task: MSBuild@1
   inputs:
     solution: 'Xamarin.Android.ViewPump/Xamarin.Android.ViewPump.csproj'
+    configuration: 'Release'
